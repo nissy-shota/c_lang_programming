@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int year;
+	
+    printf("%p", &year);
+	printf("西暦年を入力して下さい:");
+    
+	scanf("%d",&year);
+	
+	if (year % 4 == 0) printf("夏季五輪\n");
+	if (year % 2 == 0 && year % 4 != 0) printf("冬季五輪\n");
+	if (year % 2 != 0) printf("五輪なし\n");
+	
+	return 0;
+}
