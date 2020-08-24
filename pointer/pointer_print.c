@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int *p
+	int *p;
 	int i;
 	p = &i;
 	printf("p = %p\n",p);
